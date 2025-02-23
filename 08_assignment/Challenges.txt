@@ -1,0 +1,6 @@
+I don't know if I done it the right way, 
+I have trouble at putting a column-gap on the right panel I put a gap: 20px 20px; and doesn't work, to even the  margin on all boxes and realize there's 2 class which is .maincontent and .topbar and there's a gap in there and that's where I tried to change it.
+I still get confused specially when there is alot of div like a nested div
+
+It took me like 45mins to compelte the task
+
