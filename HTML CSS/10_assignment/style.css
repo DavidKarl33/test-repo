@@ -1,0 +1,65 @@
+body {
+    background-color: #e4e4e4;
+}
+*{
+    border: 1px solid red;
+}
+.container { 
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h1 {
+    color: #ffffff;
+    background-color: rgb(50, 132, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#form{
+    display: flex;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 400px;
+}
+
+button {
+    background-color: rgb(50, 132, 255);
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    border-radius: 2px;
+    white-space: nowrap;    
+}
+
+#list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task , .taskX {
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.task {
+    background-color:rgb(216, 242, 255) ;
+}
+.taskX{
+    background-color:rgb(163, 205, 112) ;
+    text-decoration: line-through;
+}

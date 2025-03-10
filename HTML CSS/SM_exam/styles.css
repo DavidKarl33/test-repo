@@ -1,0 +1,259 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002f6c;
+    padding: 15px 30px;
+    color: white;
+}
+.navbar{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sm-logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links img{
+    width: 30px;
+    margin: 0 20px;
+    
+}
+form{
+    display: flex;
+    
+}
+.search-button{
+    width: 50px;
+    background-color: rgb(255, 120, 17);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.navbar input {
+    padding: 12px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    width: 700px;
+    margin-left: 350px;
+}
+
+.cart{
+    border-right: 1px solid rgb(69, 69, 69);
+    border-left: 1px solid rgb(69, 69, 69);
+    padding: 10px 20px;
+    
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+.categories{
+    height: 20px;
+} 
+.categories ul{
+    display: flex;
+    justify-content: start;
+    color: #807979;
+    list-style: none;
+}
+
+.categories ul li{
+    text-wrap: nowrap;
+    font-size: 14px;
+}
+.Category-section ul li img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.exclusive {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 254, 254);
+}
+.exclusive img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 250px;
+    
+}
+.exclusive ul li{
+    display: flex;
+    flex-direction: column;
+    
+}
+.code{
+    font-weight: bold;
+}
+ .Category-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.category {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.product-list  {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Category-section ul li{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    font-size: 14px;
+    color: rgb(7, 7, 7);
+}
+
+.Category-section ul,.exclusive ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+.exclusive ul li{
+    display: inline-flex;
+    align-items: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.bottom-section{
+    background-color: #f9f9f9;;
+}
+.bottom-cotainer{
+    display: flex;
+
+}
+.bottom-section {
+    display: flex;    
+    justify-content: space-around;
+    padding: 40px;
+}
+.bottom-text h2{
+    text-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+.bottom-section img{
+    margin: 10px 10px 0 0;
+    width: 60px;
+    height: 60px;
+
+}
+.bottom-text{
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+     
+}
+.bottom-section p{
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #353535;
+    color: rgb(244, 243, 243);
+    font-size: 1em;
+    height: 100px;
+}
+footer p{
+    margin-top: 50px;
+}
+
+.price-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.previous-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.discounted {
+    color: rgb(226, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.section-title{
+    font-weight: normal;
+    margin-left: 50px;
+}
+button{
+    cursor: pointer;
+}
+.drop{
+    width: 10px;
+}

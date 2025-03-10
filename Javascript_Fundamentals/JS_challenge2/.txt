@@ -1,0 +1,2 @@
+I used a scratch paper to predict the outputs, after I tried to run everything, I saw that my task 2 solution is wrong I thought it's words[0] > word[1] at first I thought its comparing numbers of index 
+but i was wrong it's comparing the string inside the index and their Unicode values. Overall the tasks are challenging for me it took me if I'm not mistaken around 3hrs+ because I had to log --- example console.log("zebra" > "apple"); --- each string on task 2 to see if they are true or false so i can swap them. 

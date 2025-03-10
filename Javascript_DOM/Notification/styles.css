@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#notificationContainer{
+    margin-top: 20px;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 20%;
+}
+
+.notification {
+    background-color: #70b3f6;
+    padding: 5px;
+    margin: 10px 0px;
+    border: 2px solid #36d0ff; 
+    position: relative;
+    border-radius: 5px;
+   
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+button {
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

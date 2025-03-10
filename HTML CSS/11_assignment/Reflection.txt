@@ -1,0 +1,3 @@
+My process begins with sketching the layout by placing boxes to determine element positions. After that, I add colors and work on positioning. I struggled with icons since I wasn’t familiar with SVGs, so I opted to download and use the icons instead.
+
+it took me 3hours to finish this task.

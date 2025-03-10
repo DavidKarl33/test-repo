@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack in the Box</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jack in the box</h1>
+    <section id="box" data-closed-src="closed.png" data-open-src="boxanimation.gif"></section>
+    <button id="openButton">Open Box</button>
+
+    <script>
+       
+        let box = document.getElementById("box");
+        let openButton = document.getElementById("openButton");
+
+       
+        box.style.backgroundImage = "url('" + box.getAttribute("data-closed-src") + "')";
+        let isOpen = false; 
+
+        
+        function toggleBoxState() {
+            
+            if (isOpen) {
+                return; 
+            }
+
+            let openSrc = box.getAttribute("data-open-src");
+            let closedSrc = box.getAttribute("data-closed-src");
+
+           
+            box.style.backgroundImage = "url('" + openSrc + "')";
+            isOpen = true;
+
+            
+            setTimeout(function() {
+                box.style.backgroundImage = "url('" + closedSrc + "')";
+                isOpen = false; 
+            }, 2000);
+        }
+
+       
+        box.addEventListener("click", toggleBoxState);
+
+       
+        openButton.addEventListener("click", toggleBoxState);
+    </script>
+</body>
+</html>

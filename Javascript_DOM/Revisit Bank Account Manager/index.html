@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <h2>Bank Account Manager</h2>
+        <p>Current Balance: $<span id="balance">1000</span></p>
+        
+        
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <div class="buttons">
+            <button id="depositBtn">Deposit</button>
+            <button id="withdrawBtn">Withdraw</button>
+        </div>
+
+        <p id="message"></p>
+
+        <h3>Transaction History</h3>
+        <ul id="transactionHistory"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

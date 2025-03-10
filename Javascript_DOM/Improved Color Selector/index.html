@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;  
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .color-box {
+            width: 100px;
+            height: 40px;
+            margin: 10px; 
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .red { background-color: red;}
+        .blue { background-color: blue;}
+        .green { background-color: green;}
+        .yellow { background-color: yellow; color: black;}
+        .purple { background-color: purple;}
+        .pink { background-color: pink;}
+        .selected {
+            border: 3px solid yellow;
+        }
+        .color-display {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Color Selector</h1>
+    <p>Click a color to change the background and highlight the selected color</p>
+    <div id="container">
+        <button class="color-box red">Red</button>
+        <button class="color-box blue">Blue</button>
+        <button class="color-box green">Green</button>
+        <button class="color-box yellow">Yellow</button>
+        <button class="color-box purple">Purple</button>
+        <button class="color-box pink">Pink</button>
+    </div>
+
+    <p class="color-display" id="selected-color">Selected Color: None</p>
+
+    <script>
+        const colorDisplay = document.getElementById("selected-color");
+
+        document.querySelectorAll(".color-box").forEach(button => {
+            button.addEventListener("click", function(event) {
+                // change  background color of body and container
+                document.body.style.backgroundColor = this.classList[1];
+                document.getElementById("container").style.backgroundColor = this.classList[1];
+                
+                // display color name
+                colorDisplay.innerText = "Selected Color: " + this.textContent;
+
+                // highlight   button
+                document.querySelectorAll(".color-box").forEach(btn => btn.classList.remove("selected"));
+                this.classList.add("selected");
+
+                
+                event.stopPropagation();
+            });
+        });
+    </script>
+
+</body>
+</html>

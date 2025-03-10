@@ -1,0 +1,4 @@
+After testing it for a while with and without event.stopPropagation(), I noticed that when it's included, only one alert appears per click. Without event.stopPropagation(), clicking multiple times results in multiple alerts popping up, and I have to click each one to close them. 
+
+
+ps the color doesn't change when I click the buttons.

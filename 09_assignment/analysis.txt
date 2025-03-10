@@ -1,5 +1,0 @@
-When analyzing a webpage layout, I start by identifying the key sections that define its structure. In this case, I recognized the Header, Navigation Bar, Main Content Area, and Individual Content Blocks. To better understand the hierarchy, I categorized the elements based on their parent-child relationships. The Grandparent (G. Parent) element acts as the outermost wrapper, containing multiple Parent elements.
-
-I feel that some parts of my analysis might be incorrect, and my presentation may not be as visually clear as I’d like. Since I’m not very familiar with this yet, it’s a challenge, but I’m committed to improving and doing my best to get better.
-
-It took my 3hours to finish this.
